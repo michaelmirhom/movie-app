@@ -2,10 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
 const EditMovieForm = ({ movies }) => {
-    const { id } = useParams();
-    const navigate = useNavigate();
-    const [movie, setMovie] = useState(null);
-    const [formValues, setFormValues] = useState({ title: '', image: '', rating: '' });
+   
 
     useEffect(() => {
         const movieToEdit = movies.find((movie) => movie.id === parseInt(id));
@@ -33,7 +30,7 @@ const EditMovieForm = ({ movies }) => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        // Send a PUT request to the server
+      
         fetch(`http://localhost:3001/movies/${id}`, {
             method: 'PUT',
             headers: {
@@ -43,10 +40,10 @@ const EditMovieForm = ({ movies }) => {
         })
             .then(response => response.json())
             .then(updatedMovie => {
-                // Log the updated movie
+           
                 console.log('Updated Movie:', updatedMovie);
                 
-                // You might also want to update the movie in your local state here
+                
             })
             .catch(error => console.log(error));
 
@@ -55,7 +52,7 @@ const EditMovieForm = ({ movies }) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            {/* Replace the form inputs with your actual input fields */}
+            {}
             <input type="text" name="title" value={formValues.title} onChange={handleChange} placeholder="Title"/>
             <input type="text" name="image" value={formValues.image} onChange={handleChange} placeholder="Image URL"/>
             <input type="text" name="rating" value={formValues.rating} onChange={handleChange} placeholder="Rating"/>
