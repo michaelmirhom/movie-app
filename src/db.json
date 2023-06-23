@@ -1,0 +1,34 @@
+{
+    "movies": [
+      {
+        "id": 1,
+        "name": "Inception",
+        "image": "http://image.tmdb.org/t/p/original/rWDkbJlIyqN8KcqXajh9sZMwGzo.jpg",
+        "rating": 8.5
+      },
+      {
+        "id": 2,
+        "name": "Titanic",
+        "image": "https://tse4.explicit.bing.net/th?id=OIP.q4fqTChwruAufJTpXb2GEAHaE9&pid=Api&P=0&h=180"
+      },
+      {
+        "id": 3,
+        "name": "Interstellar",
+        "image": "https://www.slashfilm.com/wp/wp-content/images/ZZ745EBE09.jpg",
+        "rating": 8.3
+      },
+      {
+        "id": 4,
+        "name": "Avatar",
+        "image": "https://3.bp.blogspot.com/-q8hUJndXI74/TlaEaP_nRyI/AAAAAAAAG2E/7rsaM6t1Rno/s1600/avatar-wallpaper-02-1600.jpg",
+        "rating": 7.8
+      },
+      {
+        "id": 5,
+        "name": "The Dark Knight",
+        "image": "https://www.hdwallpaper.nu/wp-content/uploads/2015/10/The_Dark_Knight_wallpaper_021.jpg",
+        "rating": 8.9
+      }
+      
+    ]
+  }
