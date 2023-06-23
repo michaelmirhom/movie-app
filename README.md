@@ -8,9 +8,13 @@ git clone git@github.com:michaelmirhom/movie-app.git
 cd movie-app
 # Install the required dependencies:
 npm install
+# Install react-router-dom
+npm install react-router-dom
 # Start the json-server on port 3001:# <Note> our port is 3001 not 3000
 json-server --watch db.json --port 3001
-# In a new terminal, start the React app:
+# Building and Running the Project
+To build the project, run the following command:
+npm run build
 npm start
 # How to Use
 The home page displays a list of movies. Each movie has a details button to view more information about the movie, and a remove button to delete the movie.
