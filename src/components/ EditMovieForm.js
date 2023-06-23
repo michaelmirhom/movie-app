@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
 const EditMovieForm = ({ movies }) => {
-   
+    const { id } = useParams();
+    const navigate = useNavigate();
+    const [movie, setMovie] = useState(null);
+    const [formValues, setFormValues] = useState({ title: '', image: '', rating: '' });
 
     useEffect(() => {
         const movieToEdit = movies.find((movie) => movie.id === parseInt(id));
