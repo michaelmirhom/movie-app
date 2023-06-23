@@ -28,7 +28,24 @@
         "name": "The Dark Knight",
         "image": "https://www.hdwallpaper.nu/wp-content/uploads/2015/10/The_Dark_Knight_wallpaper_021.jpg",
         "rating": 8.9
+      },
+      {
+        "name": "Michael Mirhom",
+        "image": "https://tse2.mm.bing.net/th?id=OIP.N5MlCU6zWgXfW5Wol4BZ8AAAAA&pid=Api&P=0&h=180",
+        "rating": "10",
+        "id": 6
+      },
+      {
+        "name": "Spiderman ",
+        "image": "https://image.tmdb.org/t/p/original/pKsQmTEzXHguxi1I2l5sUMFCKju.jpg",
+        "rating": "10",
+        "id": 7
+      },
+      {
+        "name": "Michael Mirhom",
+        "image": "https://image.tmdb.org/t/p/original/pKsQmTEzXHguxi1I2l5sUMFCKju.jpg",
+        "rating": "15",
+        "id": 8
       }
-      
     ]
   }
