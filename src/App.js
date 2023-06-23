@@ -5,7 +5,7 @@ import MoviesList from './components/MoviesList';
 import MovieDetails from './components/MovieDetails';
 import NewMovieForm from './components/NewMovieForm';
 import EditMovieForm from './components/ EditMovieForm';
-
+import './styles/project-styles.css';
 
 function App() {
   const [movies, setMovies] = useState([]);
