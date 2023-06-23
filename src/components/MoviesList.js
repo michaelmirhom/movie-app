@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import '../styles/project-styles.css';
 
 function MoviesList({ movies, removeMovie }) {
   const movieItems = movies.map(movie => (
