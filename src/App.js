@@ -6,3 +6,11 @@ import MovieDetails from './components/MovieDetails';
 import NewMovieForm from './components/NewMovieForm';
 import EditMovieForm from './components/ EditMovieForm';
 import './styles/project-styles.css';
+function App() {
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3001/movies')
+      .then((response) => response.json())
+      .then((data) => setMovies(data));
+  }, 
