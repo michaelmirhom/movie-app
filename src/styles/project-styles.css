@@ -141,6 +141,6 @@ body {
   }
   
   .add-button:hover {
-    background-color: #33fa29; /* Change the background color on hover to your desired value */
+    background-color: hsl(341, 95%, 57%); /* Change the background color on hover to your desired value */
   }
   
