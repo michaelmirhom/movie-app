@@ -7,6 +7,8 @@ const EditMovieForm = ({ movies }) => {
   const [movie, setMovie] = useState(null);
   const [formValues, setFormValues] = useState({ title: '', image: '', rating: '' });
 
+  const apiUrl = 'http://localhost:3001';  // set apiUrl to 'http://localhost:3001'
+
   useEffect(() => {
     const movieToEdit = movies.find((movie) => movie.id === parseInt(id));
     setMovie(movieToEdit);
@@ -33,7 +35,7 @@ const EditMovieForm = ({ movies }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch(`/movies/${id}`, {  // changed apiUrl to /movies
+    fetch(`${apiUrl}/movies/${id}`, {  // use apiUrl here
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'

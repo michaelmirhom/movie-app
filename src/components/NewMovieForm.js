@@ -4,13 +4,15 @@ import '../styles/project-styles.css';
 function NewMovieForm({ addMovie }) {
   const [movie, setMovie] = useState({ name: '', image: '', rating: '' });
 
+  const apiUrl = 'http://localhost:3001';  // set apiUrl to 'http://localhost:3001'
+
   const handleChange = (event) => {
     setMovie({ ...movie, [event.target.name]: event.target.value });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch(`/movies`, {  // changed apiUrl to /movies
+    fetch(`${apiUrl}/movies`, {  // use apiUrl here
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -47,4 +49,3 @@ function NewMovieForm({ addMovie }) {
 }
 
 export default NewMovieForm;
-
