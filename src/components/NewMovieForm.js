@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/project-styles.css';
+
 function NewMovieForm({ addMovie }) {
   const [movie, setMovie] = useState({ name: '', image: '', rating: '' });
+
+  const apiUrl = 'https://stellular-brigadeiros-1c698a.netlify.app';
 
   const handleChange = (event) => {
     setMovie({ ...movie, [event.target.name]: event.target.value });
@@ -9,7 +12,7 @@ function NewMovieForm({ addMovie }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch('http://localhost:3001/movies', {
+    fetch(`${apiUrl}/movies`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -28,7 +31,6 @@ function NewMovieForm({ addMovie }) {
       })
       .catch(error => console.log(error));
   };
-  
 
   return (
     <form onSubmit={handleSubmit}>
