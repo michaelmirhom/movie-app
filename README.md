@@ -1,6 +1,8 @@
 # Movie-App
 # Project Description
 Movie-App is a comprehensive movie information application. Users can add, edit, view, and delete movie entries. Each movie entry includes details like the movie's name, image, and rating. This app is built using React.js and styled using CSS.
+
+The project consists of both frontend and backend components. The frontend is built with React.js and uses React Router for routing. The backend is implemented using a json-server, which serves as a mock API for managing movie data.
 # Installation Instructions
 # Clone the repository:
 git clone git@github.com:michaelmirhom/movie-app.git
@@ -29,6 +31,8 @@ Commit your changes: git commit -m 'Add some AmazingFeature'
 Push to the branch: git push origin feature/AmazingFeature
 Open a pull request.
 Remember to follow the Code of Conduct to maintain a healthy and respectful community.
+# Deployment
+The frontend of the Movie-App is deployed on Netlify, while the json-server backend can be deployed on platforms like Render. Ensure that the appropriate deployment settings and environment variables are configured for successful deployment.
 # License
 This project is licensed under the terms of the MIT License.
 
