@@ -4,15 +4,13 @@ import '../styles/project-styles.css';
 function NewMovieForm({ addMovie }) {
   const [movie, setMovie] = useState({ name: '', image: '', rating: '' });
 
-  const apiUrl = 'https://stellular-brigadeiros-1c698a.netlify.app';
-
   const handleChange = (event) => {
     setMovie({ ...movie, [event.target.name]: event.target.value });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch(`${apiUrl}/movies`, {
+    fetch(`/movies`, {  // changed apiUrl to /movies
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -49,3 +47,4 @@ function NewMovieForm({ addMovie }) {
 }
 
 export default NewMovieForm;
+

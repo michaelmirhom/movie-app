@@ -23,8 +23,6 @@ const EditMovieForm = ({ movies }) => {
     return <div>Loading...</div>;
   }
 
-  const apiUrl = 'https://stellular-brigadeiros-1c698a.netlify.app';
-
   const handleChange = (event) => {
     setFormValues({
       ...formValues,
@@ -35,7 +33,7 @@ const EditMovieForm = ({ movies }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch(`${apiUrl}/movies/${id}`, {
+    fetch(`/movies/${id}`, {  // changed apiUrl to /movies
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -62,3 +60,4 @@ const EditMovieForm = ({ movies }) => {
 };
 
 export default EditMovieForm;
+
